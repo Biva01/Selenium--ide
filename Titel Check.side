@@ -1,0 +1,132 @@
+{
+  "id": "4a3120e6-0ed0-4d90-86ee-3298d95a73b7",
+  "version": "2.0",
+  "name": "check",
+  "url": "https://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "ea41c7cd-8787-4ab5-8898-26c73360a973",
+    "name": "test1",
+    "commands": [{
+      "id": "67447fed-b8b9-4ed2-b3ce-1cbeda285cb2",
+      "comment": "",
+      "command": "open",
+      "target": "/dynamic_loading/1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1ca8297-2b8e-49e8-91b0-c445c161386e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "500x500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47771fc2-3cb3-42eb-b5be-503a343260ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//div[@id='start']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Start')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da73dd30-6647-46a2-866b-b3f3519fa74f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=h4:nth-child(1)",
+      "targets": [
+        ["css=h4:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='finish']/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Hello World!')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "91adc311-9d91-47e3-9822-cba0a4ecd430",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4:nth-child(1)",
+      "targets": [
+        ["css=h4:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='finish']/h4", "xpath:idRelative"],
+        ["xpath=//div[3]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Hello World!')]", "xpath:innerText"]
+      ],
+      "value": "Hello World!"
+    }, {
+      "id": "81e813a3-daec-4ae6-829b-384363525b03",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "The Internet",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be3e4d44-df93-4202-8e2d-df7eb1dc0e9f",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "532,452"
+    }, {
+      "id": "52e1f416-a7c9-41ab-9391-8b1345fea694",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "532,452"
+    }, {
+      "id": "fb723938-be05-44e5-b8cd-305e1f7e4f1f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": "532,452"
+    }, {
+      "id": "cfb67d42-81b4-4fb5-826d-58c6e8385639",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1bf92de-29ba-40bb-8078-322089e81b6e",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "The Internet",
+      "targets": [],
+      "value": "vartitle"
+    }, {
+      "id": "eeff9078-831f-4020-85a9-d9bf7d745dc7",
+      "comment": "",
+      "command": "echo",
+      "target": "${vartitle}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ebf9f5e1-2369-4feb-836d-d08869549502",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea41c7cd-8787-4ab5-8898-26c73360a973"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}

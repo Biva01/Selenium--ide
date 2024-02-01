@@ -1,0 +1,173 @@
+{
+  "id": "508b4ac7-dd1e-400b-83a1-0e03025fedd1",
+  "version": "2.0",
+  "name": "che",
+  "url": "https://ums.lpu.in/lpuums/LoginNew.aspx",
+  "tests": [{
+    "id": "67b94eb8-e23b-4d29-af7c-d18ae0ad6b45",
+    "name": "test1",
+    "commands": [{
+      "id": "5dc1a01d-f038-4f3a-8439-58e494f7a682",
+      "comment": "",
+      "command": "open",
+      "target": "https://ums.lpu.in/lpuums/LoginNew.aspx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f046cb55-5f79-4cc2-9bab-abdaabaa7c3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "546x518",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc5723ab-be35-43e3-b2c1-2be64775ab29",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtU",
+      "targets": [
+        ["id=txtU", "id"],
+        ["name=txtU", "name"],
+        ["css=#txtU", "css:finder"],
+        ["xpath=//input[@id='txtU']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/table/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "12003590"
+    }, {
+      "id": "b7b212ea-3586-4d47-af5c-1841fff7295c",
+      "comment": "",
+      "command": "type",
+      "target": "id=TxtpwdAutoId_8767",
+      "targets": [
+        ["id=TxtpwdAutoId_8767", "id"],
+        ["name=TxtpwdAutoId_8767", "name"],
+        ["css=#TxtpwdAutoId_8767", "css:finder"],
+        ["xpath=//input[@id='TxtpwdAutoId_8767']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Ak4shLPU#"
+    }, {
+      "id": "ad9f8d96-51b4-4251-b557-012b48557bad",
+      "comment": "",
+      "command": "type",
+      "target": "id=TxtpwdAutoId_8767",
+      "targets": [
+        ["id=TxtpwdAutoId_8767", "id"],
+        ["name=TxtpwdAutoId_8767", "name"],
+        ["css=#TxtpwdAutoId_8767", "css:finder"],
+        ["xpath=//input[@id='TxtpwdAutoId_8767']", "xpath:attributes"],
+        ["xpath=//div[@id='UpdatePanel1']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Ak4shLPU#"
+    }, {
+      "id": "55305b54-3fea-4d0a-abaa-ae89c258bf53",
+      "comment": "",
+      "command": "click",
+      "target": "id=iBtnLogins",
+      "targets": [
+        ["id=iBtnLogins", "id"],
+        ["name=iBtnLogins", "name"],
+        ["css=#iBtnLogins", "css:finder"],
+        ["xpath=//input[@id='iBtnLogins']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/div[3]/div[2]/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b616115-5e92-4cf2-9999-311c8cf32be9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.navbar-toggler",
+      "targets": [
+        ["css=.navbar-toggler", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/nav/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e29c12e-67c5-4c0d-ae8f-88d01d201134",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.navbar-toggler",
+      "targets": [
+        ["css=.navbar-toggler", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='aspnetForm']/nav/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c79d1e29-19c3-4ea8-a938-d4a56033b564",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "478b19bf-12a5-4b19-bc91-4bf6a3e54be5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/nav/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa950ea9-4361-4570-bea6-0c169affc3bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) .main-heading",
+      "targets": [
+        ["css=.row:nth-child(3) .main-heading", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/main/div/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Important Links and Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b54711-890d-4fbe-96c5-b02ef45324e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(3) .main-heading",
+      "targets": [
+        ["css=.row:nth-child(3) .main-heading", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/main/div/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Important Links and Information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1f12491-3985-410b-85f7-cc88cb9dfea0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.row:nth-child(3) .main-heading",
+      "targets": [
+        ["css=.row:nth-child(3) .main-heading", "css:finder"],
+        ["xpath=//form[@id='aspnetForm']/main/div/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Important Links and Information')]", "xpath:innerText"]
+      ],
+      "value": "Important Links and Information"
+    }]
+  }],
+  "suites": [{
+    "id": "6e35229a-a05a-4c70-a0af-614aeb1a8617",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["67b94eb8-e23b-4d29-af7c-d18ae0ad6b45"]
+  }],
+  "urls": [],
+  "plugins": []
+}

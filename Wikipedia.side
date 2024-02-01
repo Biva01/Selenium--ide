@@ -1,0 +1,112 @@
+{
+  "id": "adbe9747-34ee-417e-b6d7-c41953e1f49b",
+  "version": "2.0",
+  "name": "wikipedia",
+  "url": "https://www.wikipedia.org/",
+  "tests": [{
+    "id": "dabd134c-ca26-49d8-a1b2-75fa4d7ac5bd",
+    "name": "test1",
+    "commands": [{
+      "id": "713bf8f8-c810-4732-9ef7-329c871172c0",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wikipedia.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "484d2cf1-116b-40d5-988e-aecdc725ed31",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf87ccba-5f08-4986-ad3b-e2ffec70793b",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "selenium ide"
+    }, {
+      "id": "8ab03c08-a7be-4525-b5ef-90a99ada2a48",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "a0dbd3a4-38c9-429c-99ff-32bc47746b6e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ThoughtWorks",
+      "targets": [
+        ["linkText=ThoughtWorks", "linkText"],
+        ["css=p:nth-child(12) > .mw-redirect", "css:finder"],
+        ["xpath=//a[contains(text(),'ThoughtWorks')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/ThoughtWorks')]", "xpath:href"],
+        ["xpath=//p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ThoughtWorks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "565cfc3d-f5e1-4c75-aa46-e10775cc7e18",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "Thoughtworks - Wikipedia",
+      "targets": [],
+      "value": "varTitle"
+    }, {
+      "id": "9a994f41-5c4c-478f-ada7-8dbe363ba78f",
+      "comment": "",
+      "command": "echo",
+      "target": "${varTitle}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44f98c28-4bf4-4438-817a-c630bea81a29",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(12) > a:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(12) > a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Jim Highsmith')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/p[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/wiki/Jim_Highsmith')])[2]", "xpath:href"],
+        ["xpath=//p[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b844da1-f9af-42ae-89fb-77c83a7e46c3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "dfbea921-29ae-4905-9e56-660bac7372a1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dabd134c-ca26-49d8-a1b2-75fa4d7ac5bd"]
+  }],
+  "urls": ["https://www.wikipedia.org/"],
+  "plugins": []
+}

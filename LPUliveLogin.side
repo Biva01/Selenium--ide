@@ -1,0 +1,133 @@
+{
+  "id": "9a4cab70-9b5a-43a2-a359-1deb05819a38",
+  "version": "2.0",
+  "name": "instaLogin",
+  "url": "https://lpulive.lpu.in/login",
+  "tests": [{
+    "id": "e9405a97-a7a4-47d2-9ba4-3e9d31d776c4",
+    "name": "login",
+    "commands": [{
+      "id": "f296cc9e-f565-4ea5-bf6a-9772fcfc6280",
+      "comment": "",
+      "command": "open",
+      "target": "https://lpulive.lpu.in/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90d25265-5279-494d-b600-d5099dc5652f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "546x518",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d4d9375-1d7c-4c35-9ea1-a68091f0a3cf",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${username}"
+    }, {
+      "id": "1762564b-c887-4b97-b48b-a81991e69d34",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "5f2dd6b9-0262-4ade-8d0e-6d833ccdfd32",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea647dbe-53ea-4b7e-bb2e-86eb8c4c2774",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff4ab38-1f3a-4775-8a17-46d749239b93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a38f17-1918-47ab-8f76-a67b2570b048",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7beeef2d-3c94-4ed4-bfd9-ddf8665bc84f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1f9319bb-b8e6-4746-8dd9-460538715978",
+    "name": "credientials",
+    "commands": [{
+      "id": "adb10909-0a47-4207-9e90-bd41ae2f79f2",
+      "comment": "",
+      "command": "store",
+      "target": "12003590",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "dde0e1f1-739e-431e-ab51-f5171787bd60",
+      "comment": "",
+      "command": "store",
+      "target": "Ak4shLPU#",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "7ceec7ff-4f2f-418a-b4e5-38169d5355f9",
+      "comment": "",
+      "command": "run",
+      "target": "login",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c138bb36-e3e6-42ea-aa9d-27d284ca30c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e9405a97-a7a4-47d2-9ba4-3e9d31d776c4"]
+  }],
+  "urls": ["https://www.instagram.com/", "https://lpulive.lpu.in/login"],
+  "plugins": []
+}
